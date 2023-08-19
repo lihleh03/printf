@@ -2,7 +2,7 @@
 
 /**
  * get_size - calculates the size of the cast on he argument.
- * @formet: the formtted string prints the argument.
+ * @form: the formtted string prints the argument.
  * @i: list all the arguments printed.
  * 
  * Return: Presition (Success)
