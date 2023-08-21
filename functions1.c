@@ -121,10 +121,11 @@ int print_hexa_upper(va_list types, char buffer[],
  * @width: Width
  * @precision: precision specification
  * @size: size specifier.
+ * @map_to: an array that likely contains characters used to represent the hexadecimal digits
+ * @flag_ch: represent a character that could be used as part of a formatting flag
  * Return: Number of characterss printed.
  */
-int print_hexa(va_list types, char map_to[], char buffer[],
-	int flags, char flag_ch, int width, int precision, int size)
+int print_hexa(va_list types, char map_to[], char buffer[], int flags, char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
